@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="data-computer-software-gift-black-white-computer-icons-surprise-349ecc28d8a24657c15df3faf9c15aa4.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>Message</title>
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+   body{
+    background-color: rgb(17, 16, 16);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+
+   }
+   .container{
+    width: 70vw;
+   }
+    #app{
+        font-size: 30px;
+        font-family: 'Minecraft', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        color: aliceblue;
+        text-align: center;
+        letter-spacing: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        animation:
+        typing 4s steps(50),
+        cursor .6s infinite alternate;
+    }
+    @media screen and (max-width: 800px) {
+        #app{
+            font-size: 20px;
+        }
+        img{
+            height: 15px;
+            width: 15px;
+        }
+    }
+</style>
+    <div class="container">
+<div id="app">
+</div>
+    </div>
+
+    <script>
+        var app = document.getElementById('app');
+
+        var Typewriter = new Typewriter(app,{
+            loop: true,
+            delay: 75,
+        } );
+
+        Typewriter
+        .pauseFor(2000)
+        .typeString('hi sayang')
+        .pauseFor(2000)
+        .deleteChars(9)
+        .typeString('selamat ulang tahun <br>yaa')
+        .pauseFor(2000)
+        .deleteChars(23)
+        .typeString('semoga panjang umur<br>dan sehat selalu')
+        .pauseFor(2000)
+        .deleteChars(40)
+        .typeString('semoga lulus di ptn <br> yang diinginkan')
+        .pauseFor(2000)
+        .deleteChars(40)
+        .typeString('semoga sayang aku <br>terus <img src="pngwing.com.png" width="25" height="25"></img><img src="pngwing.com.png" width="25" height="25"></img>')
+        .pauseFor(2000)
+        .deleteChars(27)
+        .typeString('aku redirect yaa')
+        .pauseFor(5000)
+        .start()
+
+        
+        setTimeout(myURL,50000);
+        
+        function myURL(){
+            window.location.href = 'main page.html';
+        }
+    </script>
+</body>
+</html>
